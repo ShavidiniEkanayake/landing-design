@@ -1,4 +1,4 @@
-import { HeroCard, Sparkle } from './icons';
+import { HeroCard, Sparkle } from '@/icons';
 
 export const Hero = () => {
   return (

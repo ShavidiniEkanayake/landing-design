@@ -1,14 +1,14 @@
 import { Montserrat } from 'next/font/google';
 
-import '../styles/globals.css';
+import '@/styles/globals.css';
 import Home from './home';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
-function MyApp() {
+function MyApp({ Component, pageProps }) {
   return (
     <main className={montserrat.className}>
-      <Home />
+      <Component {...pageProps} />
     </main>
   );
 }

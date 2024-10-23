@@ -1,4 +1,4 @@
-import { Squre } from './icons';
+import { Squre } from '@/icons';
 
 export const Scan = () => {
   return (
