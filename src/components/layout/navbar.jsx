@@ -29,7 +29,7 @@ export const NavBar = () => {
   return (
     <>
       <header className="absolute w-full bg-transparent top-0 z-[100]">
-        <div ref={navBarRef} className="container px-16 lg:px-0">
+        <div ref={navBarRef} className="container font-inter">
           <div className="flex justify-between items-center min-h-20">
             <div className="flex items-center gap-20">
               <Logo className="w-16 lg:w-28 h-auto2" />
@@ -65,19 +65,21 @@ export const NavBar = () => {
                 </svg>
               </button>
             </div>
-            <div className="flex space-x-4">
-              <a
-                className="rounded-lg text-white px-4 py-2 hidden lg:block hover:bg-white/65 hover:text-purple transition-all duration-300"
-                href="/sign-in"
-              >
-                Sign Up
-              </a>
-              <a
-                className="rounded-lg text-white px-4 py-2 hidden lg:block bg-black/65 hover:bg-white/65 hover:text-purple transition-all duration-300"
-                href="/get-started"
-              >
-                Get Started
-              </a>
+            <div className="hidden lg:block">
+              <div className="flex space-x-4">
+                <a
+                  className="rounded-lg text-white px-4 py-2   hover:text-purple transition-all duration-300"
+                  href="/sign-in"
+                >
+                  Sign Up
+                </a>
+                <a
+                  className="rounded-lg text-white px-4 py-2  bg-black/65 hover:bg-white/65 hover:text-purple transition-all duration-300"
+                  href="/get-started"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -88,16 +90,31 @@ export const NavBar = () => {
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col h-full justify-center items-center m-6 font-inter uppercase text-3xl gap-6">
+        <div className="flex flex-col h-full justify-center items-center m-6 font-inter uppercase gap-6">
           {item.map((navItem) => (
             <a
               key={navItem.path}
               href={navItem.path}
-              className="dark:text-white font-inter font-semibold text-lg"
+              className=" font-inter font-semibold text-lg"
             >
               {navItem.label}
             </a>
           ))}
+
+          <div className="mt-10 flex flex-col space-y-4  items-center">
+            <a
+              className="rounded-lg  px-4 py-2 bg-purple-600 transition-all duration-300 text-center"
+              href="/sign-in"
+            >
+              Sign Up
+            </a>
+            <a
+              className="rounded-lg  text-white px-4 py-2 bg-black  transition-all duration-300  text-center"
+              href="/get-started"
+            >
+              Get Started
+            </a>
+          </div>
         </div>
         <span className="fixed flex justify-center bottom-10 left-0 right-0">
           <X
