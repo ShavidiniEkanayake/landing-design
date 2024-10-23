@@ -1,6 +1,6 @@
 export const Benefits = () => {
   return (
-    <div className="py-12 text-center font-inter container">
+    <div className="py-12 text-center container">
       <div className="py-20">
         <h1 className="text-4xl md:text-5xl mb-4 uppercase">
           {' '}

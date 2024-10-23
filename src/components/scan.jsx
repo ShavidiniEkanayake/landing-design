@@ -2,7 +2,7 @@ import { Squre } from './icons';
 
 export const Scan = () => {
   return (
-    <section className="flex flex-col-reverse lg:flex-row justify-between items-center bg-white font-inter container pb-10">
+    <section className="flex flex-col-reverse lg:flex-row justify-between items-center bg-white container pb-10">
       <div className="lg:w-1/2 w-full text-center lg:text-left mt-8 md:mt-0">
         <div className="inline-block bg-purple/15 backdrop-blur text-purple py-1 px-1 pr-3 rounded-md text-sm my-5 md:mb-10 lg:mb-14">
           <Squre className="w-7 h-7 inline-block p-1 mr-2 backdrop-blur rounded-md bg-transparent" />

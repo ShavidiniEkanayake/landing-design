@@ -19,7 +19,7 @@ export const Payment = () => {
   ];
 
   return (
-    <div className="py-12 px-4 text-center font-inter">
+    <div className="py-12 px-4 text-center">
       <div className="md:mb-10 py-10 md:py-20">
         <h1 className="text-4xl md:text-5xl mb-4">PAYMENT METHODS BUILT</h1>
         <h1 className="text-4xl md:text-5xl font-black text-purple">

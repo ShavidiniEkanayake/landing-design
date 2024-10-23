@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
     <>
       <header className="absolute w-full bg-transparent top-0 z-[100]">
-        <div ref={navBarRef} className="container font-inter">
+        <div ref={navBarRef} className="container">
           <div className="flex justify-between items-center min-h-20">
             <div className="flex items-center gap-20">
               <Logo className="w-16 lg:w-28 h-auto2" />
@@ -40,7 +40,7 @@ export const NavBar = () => {
                   <a
                     key={navItem.path}
                     href={navItem.path}
-                    className="hover:text-purple transition-all duration-300 text-white font-inter"
+                    className="hover:text-purple transition-all duration-300 text-white"
                   >
                     {navItem.label}
                   </a>
@@ -91,12 +91,12 @@ export const NavBar = () => {
           isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <div className="flex flex-col h-full justify-center items-center m-6 font-inter uppercase gap-6">
+        <div className="flex flex-col h-full justify-center items-center m-6 uppercase gap-6">
           {item.map(navItem => (
             <a
               key={navItem.path}
               href={navItem.path}
-              className=" font-inter font-semibold text-lg"
+              className=" font-semibold text-lg"
             >
               {navItem.label}
             </a>

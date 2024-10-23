@@ -15,9 +15,6 @@ const config: Config = {
       },
     },
     extend: {
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-      },
       colors: {
         purple: '#7D00D4',
       },

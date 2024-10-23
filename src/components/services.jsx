@@ -8,7 +8,7 @@ export const Services = () => {
         '/images/enterprise-logo3.png',
         '/images/enterprise-logo4.png',
       ],
-      style: 'md:border-r border-white border-b',
+      style: ' border-white border-b sm:border-r',
     },
     {
       title: 'Casual Dining',
@@ -18,7 +18,7 @@ export const Services = () => {
         '/images/casual-logo2.png',
         '/images/casual-logo3.png',
       ],
-      style: 'border-b border-white',
+      style: 'border-b  border-white',
     },
     {
       title: 'Breweries & Sports Bars',
@@ -28,7 +28,7 @@ export const Services = () => {
         '/images/enterprise-logo3.png',
         '/images/breweries-logo2.png',
       ],
-      style: 'md:border-r border-white md:border-b-none border-b',
+      style: ' border-white  border-b sm:border-r',
     },
     {
       title: 'Hotel Restaurants',
@@ -38,6 +38,7 @@ export const Services = () => {
         '/images/hotel-logo1.png',
         '/images/enterprise-logo1.png',
       ],
+      style: 'border-b border-white',
     },
   ];
 

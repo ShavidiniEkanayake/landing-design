@@ -1,6 +1,6 @@
 export const TakePayment = () => {
   return (
-    <section className="bg-purple text-white py-8 font-inter">
+    <section className="bg-purple text-white py-8">
       <div className="container mx-auto px-10 lg:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="mb-4 md:mb-0">
