@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <div
       className="relative h-screen bg-cover bg-center flex items-center"
-      style={{ backgroundImage: `url('/images/hero-bg.jpeg')` }}
+      style={{ backgroundImage: `url('/images/hero-bg.png')` }}
     >
       <div className="flex justify-between items-center w-full px-10">
         <div className="text-left font-inter text-white p-6 max-w-2xl">
