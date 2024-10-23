@@ -3,7 +3,7 @@ import React from 'react';
 export const TakePayment = () => {
   return (
     <section className="bg-purple text-white py-8 font-inter">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-10 lg:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="mb-4 md:mb-0">
             <p className="text-lg md:text-2xl font-extralight py-2">Choose To Take Payments</p>

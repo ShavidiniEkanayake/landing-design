@@ -5,8 +5,8 @@ import { Squre } from "./icons";
 
 export const Scan = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row justify-between items-center bg-white font-inter container pb-10">
-      <div className="md:w-1/2 w-full text-center md:text-left mt-8 md:mt-0">
+    <section className="flex flex-col-reverse lg:flex-row justify-between items-center bg-white font-inter container pb-10">
+      <div className="lg:w-1/2 w-full text-center lg:text-left mt-8 md:mt-0">
         <span className="text-purple font-semibold bg-purple/15 p-2 rounded-md text-sm inline-block my-10 md:mb-16 pr-5">
           <Squre className="w-7 h-7 inline-block p-[0.3rem] mr-2 backdrop-blur rounded-md bg-purple/20" />
           Instant Transactions
@@ -26,7 +26,7 @@ export const Scan = () => {
         </button>
       </div>
 
-      <div className="md:w-1/2 w-full flex justify-center">
+      <div className="lg:w-1/2 w-full flex justify-center">
         <Image
           src={ScanImg}
           alt="Scan to pay"
