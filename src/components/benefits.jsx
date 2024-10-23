@@ -4,7 +4,7 @@ export const Benefits = () => {
       <div className="py-20">
         <h1 className="text-4xl md:text-5xl mb-4 uppercase">
           {' '}
-          Benefits you've always
+          Benefits you&apos;ve always
         </h1>
         <h1 className="text-4xl md:text-5xl font-black text-purple uppercase">
           Dreamed of
