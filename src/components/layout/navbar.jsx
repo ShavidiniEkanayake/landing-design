@@ -28,13 +28,13 @@ export const NavBar = () => {
 
   return (
     <>
-      <header className="bg-black backdrop-blur dark:bg-darkmode border-b border-black/5 sticky top-0 z-[100]">
+      <header className="absolute w-full bg-transparent top-0 z-[100]">
         <div ref={navBarRef} className="container">
           <div className="flex justify-between items-center min-h-20">
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-20">
               <Logo className="w-16 lg:w-28 h-auto2" />
 
-              <div className="hidden lg:flex items-center gap-6">
+              <div className="hidden lg:flex items-center gap-14">
                 {item.map((navItem) => (
                   <a
                     key={navItem.path}
@@ -67,13 +67,13 @@ export const NavBar = () => {
             </div>
             <div className="flex space-x-4">
               <a
-                className="rounded-md text-white px-4 py-2 hidden lg:block"
+                className="rounded-lg text-white px-4 py-2 hidden lg:block hover:bg-white/65 hover:text-purple transition-all duration-300"
                 href="/sign-in"
               >
                 Sign Up
               </a>
               <a
-                className="rounded-md text-white px-4 py-2 hidden lg:block bg-white/25 hover:bg-black hover:text-purple transition-all duration-300"
+                className="rounded-lg text-white px-4 py-2 hidden lg:block bg-black/65 hover:bg-white/65 hover:text-purple transition-all duration-300"
                 href="/get-started"
               >
                 Get Started
