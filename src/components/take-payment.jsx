@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const TakePayment = () => {
   return (
     <section className="bg-purple text-white py-8 font-inter">

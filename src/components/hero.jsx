@@ -1,6 +1,3 @@
-import Image from 'next/image';
-
-import RightArrow from '../../public/images/right-arrow .png';
 import { HeroCard, Sparkle } from './icons';
 
 export const Hero = () => {
@@ -28,8 +25,8 @@ export const Hero = () => {
             </p>
             <button className="mt-5 md:mt-10 lg:mt-14 px-5 py-3 bg-purple hover:bg-white/50 transition-all duration-300 text-white rounded-lg font-semibold text-sm flex items-center space-x-2">
               <span>Book A Demo</span>
-              <Image
-                src={RightArrow}
+              <img
+                src="./images/right-arrow.png"
                 alt="Right arrow"
                 className="ml-2 w-5 h-5"
               />

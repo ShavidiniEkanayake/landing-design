@@ -1,8 +1,3 @@
-import React from 'react';
-
-import Image from 'next/image';
-
-import ScanImg from '../../public/images/scan-img.png';
 import { Squre } from './icons';
 
 export const Scan = () => {
@@ -29,8 +24,8 @@ export const Scan = () => {
       </div>
 
       <div className="lg:w-1/2 w-full flex justify-center">
-        <Image
-          src={ScanImg}
+        <img
+          src='./images/scan-img.png'
           alt="Scan to pay"
           className="rounded-lg w-full md:p-10"
         />
