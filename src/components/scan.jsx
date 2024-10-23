@@ -25,7 +25,7 @@ export const Scan = () => {
 
       <div className="lg:w-1/2 w-full flex justify-center">
         <img
-          src='./images/scan-img.png'
+          src="./images/scan-img.png"
           alt="Scan to pay"
           className="rounded-lg w-full md:p-10"
         />
