@@ -9,8 +9,10 @@ export const Hero = () => {
       <div className="container">
         <div className="flex flex-col lg:flex-row justify-between lg:items-center w-full">
           <div className="text-left text-white pt-10 md:pt-0 max-w-2xl">
-            <div className="inline-block bg-white/20 backdrop-blur text-white py-1 px-1 pr-3 rounded-lg text-sm my-5 md:mb-10 lg:mb-14">
-              <Sparkle className="w-6 h-6 inline-block p-1 mr-2 backdrop-blur rounded-md bg-transparent" />
+            <div className="flex items-center w-fit gap-2 bg-white/20 backdrop-blur text-white py-1 px-1 pr-3 rounded-lg text-sm my-5 md:mb-10 lg:mb-14">
+              <div className="inline-block backdrop-blur rounded-md bg-transparent p-1">
+                <Sparkle className="w-4 h-4" />
+              </div>
               Unlock Comfort And Convenience
             </div>
             <h1 className="text-4xl font-thin md:text-5xl lg:text-6xl leading-tight uppercase">
