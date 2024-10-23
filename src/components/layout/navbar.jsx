@@ -29,7 +29,7 @@ export const NavBar = () => {
   return (
     <>
       <header className="absolute w-full bg-transparent top-0 z-[100]">
-        <div ref={navBarRef} className="container">
+        <div ref={navBarRef} className="container px-16 lg:px-0">
           <div className="flex justify-between items-center min-h-20">
             <div className="flex items-center gap-20">
               <Logo className="w-16 lg:w-28 h-auto2" />
@@ -39,7 +39,7 @@ export const NavBar = () => {
                   <a
                     key={navItem.path}
                     href={navItem.path}
-                    className="hover:text-purple text-white font-inter"
+                    className="hover:text-purple transition-all duration-300 text-white font-inter"
                   >
                     {navItem.label}
                   </a>
