@@ -1,6 +1,7 @@
-import { Sparkle, HeroCard } from "./icons";
-import Image from "next/image";
-import RightArrow from "../../public/images/right-arrow .png";
+import Image from 'next/image';
+
+import RightArrow from '../../public/images/right-arrow .png';
+import { HeroCard, Sparkle } from './icons';
 
 export const Hero = () => {
   return (

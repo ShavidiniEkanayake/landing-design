@@ -6,7 +6,9 @@ export const TakePayment = () => {
       <div className="container mx-auto px-10 lg:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <div className="mb-4 md:mb-0">
-            <p className="text-lg md:text-2xl font-extralight py-2">Choose To Take Payments</p>
+            <p className="text-lg md:text-2xl font-extralight py-2">
+              Choose To Take Payments
+            </p>
             <p className="text-2xl md:text-3xl font-semibold">With Qlub</p>
           </div>
           <div className="flex flex-col md:flex-row md:gap-20 gap-8">

@@ -8,7 +8,7 @@ export const Services = () => {
         '/images/Enterprise-Brewdog.png',
         '/images/Enterprise-Chickies-Petes.png',
       ],
-      style:'md:border-r border-white border-b'
+      style: 'md:border-r border-white border-b',
     },
     {
       title: 'Casual Dining',
@@ -18,7 +18,7 @@ export const Services = () => {
         '/images/Casual-Dining-Pizzeria-Portofino.png',
         '/images/Casual-Dining-Delbar.png',
       ],
-        style:'border-b border-white'
+      style: 'border-b border-white',
     },
     {
       title: 'Breweries & Sports Bars',
@@ -28,7 +28,7 @@ export const Services = () => {
         '/images/Enterprise-Brewdog.png',
         '/images/Breweries-sports-bars-Yards-white.png',
       ],
-        style:'md:border-r border-white md:border-b-none border-b'
+      style: 'md:border-r border-white md:border-b-none border-b',
     },
     {
       title: 'Hotel Restaurants',
@@ -46,7 +46,10 @@ export const Services = () => {
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2  ">
           {items.map((item, index) => (
-            <div key={index}  className={`text-white py-16 lg:px-20 px-10 ${item.style || ''}`}>
+            <div
+              key={index}
+              className={`text-white py-16 lg:px-20 px-10 ${item.style || ''}`}
+            >
               <h3 className="text-2xl font-semibold mb-4 text-center md:text-left">
                 {item.title}
               </h3>

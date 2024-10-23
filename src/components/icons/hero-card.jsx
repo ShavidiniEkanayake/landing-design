@@ -1,4 +1,4 @@
-const HeroCard = (props) => (
+const HeroCard = props => (
   <svg
     width={398}
     height={516}

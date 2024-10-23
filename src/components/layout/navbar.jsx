@@ -1,7 +1,8 @@
-import React, { useRef, useState } from "react";
-import { X } from "lucide-react";
+import React, { useRef, useState } from 'react';
 
-import { Logo } from "../icons";
+import { X } from 'lucide-react';
+
+import { Logo } from '../icons';
 
 export const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -13,16 +14,16 @@ export const NavBar = () => {
 
   const item = [
     {
-      path: "#takePayments",
-      label: "Take Payments",
+      path: '#takePayments',
+      label: 'Take Payments',
     },
     {
-      path: "#powerYourBusiness",
-      label: "Power Your Business",
+      path: '#powerYourBusiness',
+      label: 'Power Your Business',
     },
     {
-      path: "#resources",
-      label: "Resources",
+      path: '#resources',
+      label: 'Resources',
     },
   ];
 
@@ -35,7 +36,7 @@ export const NavBar = () => {
               <Logo className="w-16 lg:w-28 h-auto2" />
 
               <div className="hidden lg:flex items-center gap-14">
-                {item.map((navItem) => (
+                {item.map(navItem => (
                   <a
                     key={navItem.path}
                     href={navItem.path}
@@ -87,11 +88,11 @@ export const NavBar = () => {
 
       <div
         className={`fixed inset-0 bg-white transition-all duration-700 z-[60] ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
         <div className="flex flex-col h-full justify-center items-center m-6 font-inter uppercase gap-6">
-          {item.map((navItem) => (
+          {item.map(navItem => (
             <a
               key={navItem.path}
               href={navItem.path}

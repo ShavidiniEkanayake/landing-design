@@ -1,11 +1,8 @@
-
-import "../styles/globals.css";
+import '../styles/globals.css';
 import Home from './home';
 
 function MyApp() {
-  return (
-   <Home />
-  );
+  return <Home />;
 }
 
 export default MyApp;

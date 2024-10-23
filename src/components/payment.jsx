@@ -1,22 +1,22 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export const Payment = () => {
   const items = [
     {
-      title: "Payment Methods Built for Restaurants",
-      logo: "/images/payment-1.png", 
+      title: 'Payment Methods Built for Restaurants',
+      logo: '/images/payment-1.png',
     },
     {
-      title: "Easy Scans Instant Service",
-      logo: "/images/payment-2.png",
+      title: 'Easy Scans Instant Service',
+      logo: '/images/payment-2.png',
     },
     {
-      title: "QR Scan Swift Checkout",
-      logo: "/images/payment-3.png",
+      title: 'QR Scan Swift Checkout',
+      logo: '/images/payment-3.png',
     },
     {
-      title: "Improve Your Operations",
-      logo: "/images/payment-4.png",
+      title: 'Improve Your Operations',
+      logo: '/images/payment-4.png',
     },
   ];
 
@@ -24,7 +24,9 @@ export const Payment = () => {
     <div className="py-12 px-4 text-center font-inter">
       <div className="md:mb-10 py-10 md:py-20">
         <h1 className="text-4xl md:text-5xl mb-4">PAYMENT METHODS BUILT</h1>
-        <h1 className="text-4xl md:text-5xl font-black text-purple">FOR RESTAURANTS</h1>
+        <h1 className="text-4xl md:text-5xl font-black text-purple">
+          FOR RESTAURANTS
+        </h1>
         <p className="text-black/50 mt-6 lg:px-[25rem]">
           Every Time A Guest Pays With Qlub, You Earn Way More Than Just
           Revenue: More Tips, More Reviews, And More Data
@@ -37,7 +39,7 @@ export const Payment = () => {
             key={index}
             className="flex flex-col items-center bg-white p-2 rounded-lg"
           >
-            <img src={item.logo} alt={item.title}  />
+            <img src={item.logo} alt={item.title} />
           </div>
         ))}
       </div>
