@@ -8,6 +8,7 @@ export const Services = () => {
         '/images/Enterprise-Brewdog.png',
         '/images/Enterprise-Chickies-Petes.png',
       ],
+      style:'md:border-r border-white border-b'
     },
     {
       title: 'Casual Dining',
@@ -17,6 +18,7 @@ export const Services = () => {
         '/images/Casual-Dining-Pizzeria-Portofino.png',
         '/images/Casual-Dining-Delbar.png',
       ],
+        style:'border-b border-white'
     },
     {
       title: 'Breweries & Sports Bars',
@@ -26,6 +28,7 @@ export const Services = () => {
         '/images/Enterprise-Brewdog.png',
         '/images/Breweries-sports-bars-Yards-white.png',
       ],
+        style:'md:border-r border-white md:border-b-none border-b'
     },
     {
       title: 'Hotel Restaurants',
@@ -40,10 +43,10 @@ export const Services = () => {
 
   return (
     <section className=" bg-black ">
-      <div className="container mx-auto px-6 ">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-2  ">
           {items.map((item, index) => (
-            <div key={index} className="text-white border p-10">
+            <div key={index}  className={`text-white py-16 lg:px-20 px-10 ${item.style || ''}`}>
               <h3 className="text-2xl font-semibold mb-4 text-center md:text-left">
                 {item.title}
               </h3>
@@ -53,7 +56,7 @@ export const Services = () => {
                     <img
                       src={logo}
                       alt={`${item.title} logo ${idx}`}
-                      className="w-36 mx-auto md:pr-10"
+                      className="w-32 mx-auto md:pr-2"
                     />
                   </div>
                 ))}
