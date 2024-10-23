@@ -5,18 +5,36 @@ import Payment3 from "../../public/images/payment-3.png";
 import Payment4 from "../../public/images/payment-4.png";
 
 export const Payment = () => {
+  const item=[
+    {
+      title: "Payment Methods Built for Restaurants",
+      logo: "/images/payment-1.png",
+    },
+    {
+        title: "Easy Scans Instant Service",
+        logo: "/images/payment-2.png",
+    },
+    {
+        title: "QR Scan Swift Checkout",
+        logo: "/images/payment-3.png",
+    },
+    {
+        title: "Improve Your Operations",
+        logo: "/images/payment-4.png",
+    }
+  ];
   return (
     <div className="py-12 px-4 text-center font-inter">
-      <div className="mb-10 py-20">
-        <h1 className="text-5xl mb-4">PAYMENT METHODS BUILT</h1>
-        <h1 className="text-5xl font-black text-purple">FOR RESTAURANTS</h1>
+      <div className="md:mb-10 py-10 md:py-20">
+        <h1 className="text-4xl md:text-5xl mb-4">PAYMENT METHODS BUILT</h1>
+        <h1 className="text-4xl md:text-5xl font-black text-purple">FOR RESTAURANTS</h1>
         <p className="text-black/50 mt-6">
           Every Time A Guest Pays With Qlub, You Earn Way More Than Just
           Revenue: More Tips, More Reviews, And More Data
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-6 md:mx-16">
         <div className="flex flex-col items-center bg-white p-2 rounded-lg">
           <Image src={Payment1} alt="Easy Scans Instant Service" />
         </div>

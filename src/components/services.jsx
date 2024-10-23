@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const Services = () => {
   const items = [
     {
@@ -41,19 +39,21 @@ export const Services = () => {
   ];
 
   return (
-    <section className="py-16 bg-black">
+    <section className=" bg-black ">
       <div className="container mx-auto px-6 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2  ">
           {items.map((item, index) => (
-            <div key={index} className="text-white">
-              <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
+            <div key={index} className="text-white border p-10">
+              <h3 className="text-2xl font-semibold mb-4 text-center md:text-left">
+                {item.title}
+              </h3>
               <div className="flex flex-wrap justify-start items-center ">
                 {item.logos.map((logo, idx) => (
                   <div key={idx} className="w-1/2 md:w-1/4 p-2">
                     <img
                       src={logo}
                       alt={`${item.title} logo ${idx}`}
-                      className="max-w-full mx-auto pr-10"
+                      className="w-36 mx-auto md:pr-10"
                     />
                   </div>
                 ))}
