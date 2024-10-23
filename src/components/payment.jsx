@@ -1,23 +1,23 @@
-export const Payment = () => {
-  const items = [
-    {
-      title: 'Payment Methods Built for Restaurants',
-      logo: '/images/payment-1.png',
-    },
-    {
-      title: 'Easy Scans Instant Service',
-      logo: '/images/payment-2.png',
-    },
-    {
-      title: 'QR Scan Swift Checkout',
-      logo: '/images/payment-3.png',
-    },
-    {
-      title: 'Improve Your Operations',
-      logo: '/images/payment-4.png',
-    },
-  ];
+const items = [
+  {
+    title: 'Payment Methods Built for Restaurants',
+    logo: '/images/payment-1.png',
+  },
+  {
+    title: 'Easy Scans Instant Service',
+    logo: '/images/payment-2.png',
+  },
+  {
+    title: 'QR Scan Swift Checkout',
+    logo: '/images/payment-3.png',
+  },
+  {
+    title: 'Improve Your Operations',
+    logo: '/images/payment-4.png',
+  },
+];
 
+export const Payment = () => {
   return (
     <div className="py-12 px-4 text-center">
       <div className="md:mb-10 py-10 md:py-20">

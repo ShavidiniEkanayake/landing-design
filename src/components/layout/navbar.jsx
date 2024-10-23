@@ -1,8 +1,22 @@
 import React, { useRef, useState } from 'react';
 
+import { Logo } from '@/icons';
 import { X } from 'lucide-react';
 
-import { Logo } from '@/icons';
+const item = [
+  {
+    path: '#takePayments',
+    label: 'Take Payments',
+  },
+  {
+    path: '#powerYourBusiness',
+    label: 'Power Your Business',
+  },
+  {
+    path: '#resources',
+    label: 'Resources',
+  },
+];
 
 export const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,21 +25,6 @@ export const NavBar = () => {
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
-
-  const item = [
-    {
-      path: '#takePayments',
-      label: 'Take Payments',
-    },
-    {
-      path: '#powerYourBusiness',
-      label: 'Power Your Business',
-    },
-    {
-      path: '#resources',
-      label: 'Resources',
-    },
-  ];
 
   return (
     <>

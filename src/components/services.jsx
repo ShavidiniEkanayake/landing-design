@@ -1,47 +1,47 @@
-export const Services = () => {
-  const items = [
-    {
-      title: 'Enterprise',
-      logos: [
-        '/images/enterprise-logo1.png',
-        '/images/enterprise-logo2.png',
-        '/images/enterprise-logo3.png',
-        '/images/enterprise-logo4.png',
-      ],
-      style: ' border-white border-b sm:border-r',
-    },
-    {
-      title: 'Casual Dining',
-      logos: [
-        '/images/enterprise-logo5.png',
-        '/images/casual-logo1.png',
-        '/images/casual-logo2.png',
-        '/images/casual-logo3.png',
-      ],
-      style: 'border-b  border-white',
-    },
-    {
-      title: 'Breweries & Sports Bars',
-      logos: [
-        '/images/breweries-logo1.png',
-        '/images/enterprise-logo4.png',
-        '/images/enterprise-logo3.png',
-        '/images/breweries-logo2.png',
-      ],
-      style: ' border-white  border-b sm:border-r',
-    },
-    {
-      title: 'Hotel Restaurants',
-      logos: [
-        '/images/hotel-logo3.png',
-        '/images/hotel-logo2.png',
-        '/images/hotel-logo1.png',
-        '/images/enterprise-logo1.png',
-      ],
-      style: 'border-b border-white',
-    },
-  ];
+const items = [
+  {
+    title: 'Enterprise',
+    logos: [
+      '/images/enterprise-logo1.png',
+      '/images/enterprise-logo2.png',
+      '/images/enterprise-logo3.png',
+      '/images/enterprise-logo4.png',
+    ],
+    style: ' border-white border-b sm:border-r',
+  },
+  {
+    title: 'Casual Dining',
+    logos: [
+      '/images/enterprise-logo5.png',
+      '/images/casual-logo1.png',
+      '/images/casual-logo2.png',
+      '/images/casual-logo3.png',
+    ],
+    style: 'border-b  border-white',
+  },
+  {
+    title: 'Breweries & Sports Bars',
+    logos: [
+      '/images/breweries-logo1.png',
+      '/images/enterprise-logo4.png',
+      '/images/enterprise-logo3.png',
+      '/images/breweries-logo2.png',
+    ],
+    style: ' border-white  border-b sm:border-r',
+  },
+  {
+    title: 'Hotel Restaurants',
+    logos: [
+      '/images/hotel-logo3.png',
+      '/images/hotel-logo2.png',
+      '/images/hotel-logo1.png',
+      '/images/enterprise-logo1.png',
+    ],
+    style: 'border-b border-white',
+  },
+];
 
+export const Services = () => {
   return (
     <section className=" bg-black ">
       <div className="">
